@@ -1,1 +1,1 @@
-# we-care-gym
+# Squads
