@@ -1,0 +1,15 @@
+body{
+   
+    background-color: #16110B !important;
+    color: #C3BBB2 !important;
+}
+h2{
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+*{
+    font-family: 'michroma', sans-serif;
+}
+.table{
+    background-color: #C3BBB2 !important;
+}

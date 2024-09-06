@@ -1,0 +1,1232 @@
+@font-face{
+    font-family: kochire;
+    src: url(KochireRegular-eZJwl.otf);
+}
+@font-face{
+    font-family: ortland;
+    src: url(urlOrtland.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+#main{
+    background-color: #16110b;
+    overflow-x: hidden;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #C3BBB2;
+    border-radius: 100px;
+    
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #16110B ;  
+   overflow-x: hidden;
+}
+.navbar{
+    font-family: michroma;  
+    border-bottom: 1px solid #C3BBB2;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar .navbar-brand{
+    color: #C3BBB2;
+    font-family: "Black Ops One", system-ui;
+}
+
+.navbar .navbar-brand:hover{
+    color: #C3BBB2;
+}
+.nav-item:hover{
+    color: #C3BBB2;
+}
+.nav-item a{
+ color: #C3BBB2;
+}
+.nav-item a:hover{
+    color: #C3BBB2;
+}
+.loginbtn{
+    align-items: end;
+    transform: translateX(800px);
+}
+#elems{
+   height: 430px;
+   /* background-color: rgb(255, 1, 1); */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px 60px;
+   border-bottom: 1px solid #C3BBB2;
+   margin-left: 10px;
+   margin-right: 10px;
+   color: #C3BBB2;
+   
+}
+#elem1{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+    border: 1px solid #C3BBB2;
+    
+}
+#elem2{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-family: mangata;
+    border-right: 2px solid #C3BBB2;
+    border-left: 2px solid #C3BBB2;
+   padding: 0px 30px;
+   
+}
+#elem2 h2{
+    font-size: 95px;
+}
+#elem2 p{
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+}
+#elem2 img{
+    filter: invert();
+}
+#elem3{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+    border: 1px solid #C3BBB2;
+}
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+#image-div:hover img{
+    scale: 1.2;
+}
+#elem1 #image-div{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#elem3 #image-div{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#page1 h1{
+    font-size: 560px;
+    font-family: canopee;
+    text-align: center;
+   color: #C3BBB2;
+   border-bottom: 1px solid #C3BBB2;
+   line-height: 500px;
+   letter-spacing: -5px;
+}
+#page2{
+    height: 200vh;
+    width: 100%;
+    background-color:#16110B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 30px;
+  box-sizing: border-box;
+   border-bottom: 1px solid #C3BBB2;
+}
+#page2-left{
+    height: 100%;
+    width: 40%;
+    padding-right: 50px;
+    border-right: 1px solid #C3BBB2;
+   
+}
+#page2-left img{
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+    border: 1px solid #C3BBB2;
+}
+#page2-left p{
+  font-size: 30px;
+  font-family: "Kalam";
+  color: #C3BBB2;
+  margin-top: 30px;
+}
+#page2-left p span{
+    color: #16110B;
+    background-color: #C3BBB2;
+   
+    font-size: 50px;
+}
+.dropcap::first-letter {
+    font-size: 3.5em; /* Adjust the size as needed */
+    font-weight: 900;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 0.8;
+    font-family: canopee;
+    margin-top: 5px;
+}
+.dropcap a{
+    color: #FFC107;
+    text-decoration: none;
+}
+#page2-left h2{
+    font-family: canopee;
+    font-size: 160px;
+    text-align: center;
+    line-height: 150px;
+    color: #C3BBB2;
+    font-weight: 100;
+}
+#page2-left h2 span{
+  font-weight: 500;
+    font-size: 210px;
+    
+}
+.exper{
+   color: #FFC107; 
+
+}
+#page2-right{
+    height: 100%;
+    width: 60%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#page2-right video{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #C3BBB2;
+}
+#page2-right h2{
+    font-family: kochire;
+    font-size: 130px;
+    padding-top: 20px;
+    color: #C3BBB2;
+   
+}
+#page2-right span{
+    transition: all ease .3s;
+}
+#page2-right h2 span:hover {
+    text-decoration: line-through #ffc107;
+}
+#page3{
+    height: 190vh;
+    width: 100%;
+    
+}
+#page3-left{
+    height: 100%;
+    width: 60%;
+}
+#page3 h2{
+    font-family: kochire;
+    font-size: 100px;
+    letter-spacing: 8px;
+    /* height: 100%; */
+    text-align: center;
+    width: 100%;
+    color: #C3BBB2;
+    margin-top: 20px;
+}
+#elem{
+    height: 430px;
+    /* background-color: rgb(255, 1, 1); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    border-bottom: 1px solid #C3BBB2;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #C3BBB2;
+}
+#elem01{
+    height: 100%;
+    width: 35%;
+    border-right: 1px solid #C3BBB2;
+}
+#elem01 p{
+    font-family: michroma; 
+    font-size: 80px;
+    text-align: center;
+}
+#elem02{
+    height: 100%;
+    width: 65%;
+    /* text-align: center; */
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+#elem02{
+    font-size: 26px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+#page4 {
+    height: 100vh;
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    border-bottom: 1px solid #C3BBB2;
+}
+#page4-left{
+    height: 90%;
+    width: 60%;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+#page4-left video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #C3BBB2;
+}
+#page4-right{
+    height: 100%;
+    width: 40%;
+    padding: 0px 40px;
+    padding-top: 40px;
+    border-left: 1px solid #C3BBB2;
+}
+#page4-right p{
+    color: #C3BBB2;
+    font-size: 26px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    margin-top: 50px;
+    line-height: 60px;
+}
+#page4-right #action{
+    height: 180px;
+    width: 80%;
+    background-color: #16110B;
+    border-radius: 50%;
+    margin: 70px 50px;
+    border: 1px solid #C3BBB2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    cursor: default;
+}
+#action h2{
+    font-family: canopee;
+    font-size: 80px;
+    color: #C3BBB2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-40%);
+    transition: all ease 0.6s;
+}
+#action img{
+    filter: invert();
+    height: 60px;
+    transform: translateX(-120%);
+    transition: all ease 0.6s;
+}
+#action:hover img{
+    transform: translateX(60%);
+}
+#action:hover h2{
+    transform: translateX(140%);
+}
+#page5{
+    height: 110vh;
+    width: 100%;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C3BBB2;
+}
+.page5-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+#page5 h2{
+    font-family: kochire;
+    font-size: 100px;
+    letter-spacing: 8px;
+    /* height: 100%; */
+    text-align: center;
+    width: 100%;
+    color: #C3BBB2;
+    margin-top: 20px;
+}
+#page5 .note{
+    color: #C3BBB2;
+    font-family: michroma;
+    font-size: 20px; 
+    padding-right: 8px;
+    margin-top: 10px;
+}
+#page5 .note span{
+    color: #FFC107;
+
+}
+#elem001{
+    width: 30%;
+    height: 70%;
+    border: 3px solid #C3BBB2;
+    border-radius: 10%;
+}
+#elem001 h3{
+    font-family: michroma;
+    color: #C3BBB2;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+#elem001 h4{
+    font-family: michroma;
+    color: #C3BBB2;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+#elem001 h4 i{
+    color: #FFC107;
+}
+#elem001 h3{
+    color: #FFC107;
+    font-family: michroma;
+    font-size: 55px;
+    margin-top: 45px;
+}
+#page5 #membership{
+    height: 80px;
+    width: 40%;
+    background-color: #16110B;
+    border-radius: 20%;
+    margin: 40px 130px;
+    border: 1px solid #C3BBB2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    cursor: default;
+    text-align: center;
+   
+}
+#membership h3{
+    font-family: canopee;
+    font-size: 40px;
+    color: #C3BBB2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    transform: translateX(-55%);
+    transition: all ease 0.6s;
+}
+#membership img{
+    filter: invert();
+    height: 30px;
+    transform: translateX(-120%);
+    transition: all ease 0.6s;
+}
+#membership:hover img{
+    transform: translateX(45%);
+}
+#membership:hover h3{
+    transform: translateX(140%);
+}  
+#medias{
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid #C3BBB2;
+}
+#medias a{
+    text-decoration: none;
+    color: #C3BBB2;
+}
+#medias a h3{
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    line-height: 10px;
+}
+#page6{
+    height: 15vh;
+    width: 100%;
+ white-space: nowrap;
+ overflow-x: auto;
+ overflow-y: hidden;
+ border-bottom: 1px solid #C3BBB2;
+
+}
+#page6::-webkit-scrollbar{
+    display: none;
+}
+#page6 h2{
+    font-size: 40px;
+    font-family: domain;
+    color: #C3BBB2;
+    padding-top: 30px;
+    display: inline-block;
+    /* margin-right: 20px; */
+    margin-top: 10px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#page6 h2 span{
+    font-family: canopee;
+    background-color: #C3BBB2;
+    color: #16110B;
+    padding: 0 12px;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+#page6:hover h2{
+    animation-play-state: paused;
+}
+#page7{
+    height: 40px;
+}
+@media only screen and (max-width: 600px) {
+    .loginbtn{
+        transform: translateX(50px);
+    }
+   #elems {
+     display: none;
+     border: none;
+     padding-top: 0px;
+     padding: 0px;
+
+    }
+    
+    #page1 h1{
+        height: 30vh;
+        font-size: 150px;
+      margin-top: 0%;
+      letter-spacing: 5px;
+      text-align: center;
+      line-height: 200px;
+    }
+    #page2{
+        height: 100vh;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 23px;
+    }
+    #page2-left{
+        width: 40%;
+        padding-right: 20px;
+    }
+    #page2-left h2{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    #page2-left h2 span{
+        font-size: 60px;
+        
+    }
+    #page2-left img{
+        object-fit: cover;
+        height: 60%;
+        width: 100%;
+        border: 1px solid #C3BBB2;
+    }
+    #page2-left p{
+        font-size: 10px;
+        font-family: "Kalam";
+        color: #C3BBB2;
+        margin-top: 10px;
+      }
+     
+      #page2-right{
+        width: 60%;
+        padding-right: 10px
+      }
+     
+    #page2-right h2{
+        font-family: kochire;
+        font-size: 30px;
+        padding-top: 25px;
+        color: #C3BBB2;
+        padding-left: 30px;
+        letter-spacing: 4px;
+    }
+    #page3{
+        height: 115vh;
+    }
+    #page3 h2{
+        font-size: 40px;
+    }
+    #elem{
+        display: flex;
+        height: 220px;
+        align-items: center;
+        padding: 0px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        /* justify-content: center; */
+    }
+    #elem02{
+        height: 100%;
+        width: 100;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    #elem01{
+        width: 45%;
+        padding-top: 50px;
+        padding-left: 33px;
+    }
+    #elem01 p{
+        font-size: 30px;
+       text-align: left;
+       padding-right: 100px;
+    }
+    #elem02 p{
+        display: flex;
+        font-size: 10px;
+        padding-top: 100px;
+        padding: 0px;
+        height: 100%;
+        width: 100;
+    }
+    #page4{
+        height: 58vh;
+        padding: 0px;
+        width: 100%;
+
+    }
+    #page4-left{
+     display: none;
+    }
+    #page4-right{
+        width:100% ;
+    }
+    #page4-right p{
+        color: #C3BBB2;
+    font-size: 20px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    margin-top: 0px;
+    line-height: 20px;
+    }
+    #page4-right #action{
+        height: 100px;
+        width: 60%;
+        background-color: #16110B;
+        border-radius: 50%;
+        margin: 70px 50px;
+        border: 1px solid #C3BBB2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        cursor: default;
+        margin-left: 75px;
+    }
+    #action h2{
+        font-family: canopee;
+        font-size: 58px;
+        color: #C3BBB2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-53%);
+        transition: all ease 0.6s;
+    }
+    #action img{
+        filter: invert();
+        height: 50px;
+        transform: translateX(-90%);
+        transition: all ease 0.6s;
+    }
+    #action:hover img{
+        transform: translateX(45%);
+    }
+    #action:hover h2{
+        transform: translateX(190%);
+    }
+    #page5{
+        height: 330vh;
+        width: 100%;
+        padding-left: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #C3BBB2;
+    }
+    .page5-content{
+        display: block;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 30px 50px;
+    }
+    #page5 h2{
+        font-family: kochire;
+        font-size: 50px;
+        letter-spacing: 8px;
+        /* height: 100%; */
+        text-align: center;
+        width: 100%;
+        color: #C3BBB2;
+        margin-top: 20px;
+    }
+    #page5 .note{
+        color: #C3BBB2;
+        font-family: michroma;
+        font-size: 20px; 
+        padding-right: 8px;
+        margin-top: 10px;
+    }
+    #page5 .note span{
+        color: #FFC107;
+    
+    }
+    #elem001{
+        width: 100%;
+        height: 500px;
+        border: 3px solid #C3BBB2;
+        border-radius: 10%;
+        margin-bottom: 60px;
+    }
+    #elem001 h3{
+        font-family: michroma;
+        color: #C3BBB2;
+        text-align: center;
+        margin-top: 70px;
+        font-size: 50px;
+    }
+    #elem001 h4{
+        font-family: michroma;
+        color: #C3BBB2;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    #elem001 h4 i{
+        color: #FFC107;
+    }
+    #elem001 h3{
+        color: #FFC107;
+        font-family: michroma;
+        font-size: 55px;
+        margin-top: 45px;
+    }
+    #page5 #membership{
+        height: 80px;
+        width: 40%;
+        background-color: #16110B;
+        border-radius: 20%;
+        margin: 50px 105px;
+        border: 1px solid #C3BBB2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        cursor: default;
+        text-align: center;
+       
+    }
+    #membership h3{
+        font-family: canopee;
+        font-size: 40px;
+        color: #C3BBB2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        transform: translateX(-55%);
+        transition: all ease 0.6s;
+    }
+    #membership img{
+        filter: invert();
+        height: 30px;
+        transform: translateX(-120%);
+        transition: all ease 0.6s;
+    }
+    #membership:hover img{
+        transform: translateX(45%);
+    }
+    #membership:hover h3{
+        transform: translateX(140%);
+    }  
+  }
+  @media (min-width: 380px) and (max-width: 480px) {
+    .loginbtn{
+        transform: translateX(25px);
+    }
+    #elems {
+        display: none;
+        border: none;
+        padding: 0px;
+    }
+
+    #page1 h1{
+        height: 15vh;
+        font-size: 130px;
+        margin-top: 0%;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height:135px;
+    }
+
+    #page2{
+        height: 55vh;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    #page2-left{
+        width: 100%;
+        padding-right: 25px;
+    }
+    #page2-left h2{
+        font-size: 55px;
+        line-height: 40px;
+    }
+    #page2-left h2 span{
+        font-size: 55px;
+    }
+    #page2-left img{
+        object-fit: cover;
+        height: 50%;
+        width: 100%;
+        border: 1px solid #C3BBB2;
+    }
+    #page2-left p{
+        font-size: 8px;
+        margin-top: 8px;
+    }
+
+    #page2-right{
+        width: 100%;
+        padding-right: 5px;
+    }
+
+    #page2-right h2{
+        font-size: 24px;
+        padding-top: 20px;
+        padding-left: 0px;
+        letter-spacing: 3px;
+    }
+
+    #page3{
+        height: 70vh;
+    }
+    #page3 h2{
+        font-size: 35px;
+    }
+    #elem{
+        height: 180px;
+        width: 100%;
+        padding-top: 15px;
+    }
+    #elem02{
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    #elem01{
+        width: 50%;
+        padding-top: 40px;
+        padding-left: 25px;
+    }
+    #elem01 p{
+        font-size: 25px;
+        padding-right: 70px;
+    }
+    #elem02 p{
+        font-size: 8px;
+       text-align: center;
+       padding-right: 10px;
+    }
+    #page4{
+        height: 40vh;
+    }
+    #page4-left{
+        display: none;
+    }
+    #page4-right{
+        width: 100%;
+    }
+    #page4-right p{
+        font-size: 18px;
+        margin-top: 0px;
+        line-height:18px;
+    }
+    #page4-right #action{
+        height: 80px;
+        width: 50%;
+        margin: 45px 35px;
+        margin-left: 60px;
+    }
+    #action h2{
+        font-size: 40px;
+        margin-right: 15px;
+    }
+    #action img{
+        height: 40px;
+        transform: translateX(-70%);
+    }
+    #page5{
+        height: 190vh;
+        padding-left: 30px;
+        padding-bottom: 15px;
+    }
+    .page5-content{
+        padding: 20px 35px;
+    }
+    #page5 h2{
+        font-size: 40px;
+        letter-spacing: 6px;
+        margin-top: 15px;
+    }
+    #page5 .note{
+        font-size: 18px;
+        padding-right: 5px;
+    }
+    #elem001{
+        height: 400px;
+        margin-bottom: 50px;
+    }
+    #elem001 h3{
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    #elem001 h4{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    #page5 #membership{
+        height: 60px;
+        width: 35%;
+        margin: 40px 80px;
+    }
+    #membership h3{
+        font-size: 30px;
+        transform: translateX(-70%);
+        text-align: center;
+        margin-top: 30px;
+    }
+    #membership img{
+        height: 25px;
+        transform: translateX(-80%);
+    }
+    #membership:hover img{
+        transform: translateX(35%);
+    }
+    #membership:hover h3{
+        transform: translateX(120%);
+    } 
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .loginbtn{
+      transform: translateX(150px); /* Reduced translate for better alignment */
+    }
+    #elems{
+      height: 350px;
+      padding-top: 15px;
+      text-align: center;
+    }
+    #elem1, #elem3{
+      display: none;
+    }
+    #elem2{
+      width: 100%;
+      border: none;
+    }
+    #elem2 p{
+      font-size: 35px; /* Slightly reduced font size for better readability */
+    }
+    #elem2 .img-fluid{
+      width: 180px;
+      height: 60px; /* Adjusted dimensions for better fit */
+    }
+    #page1 h1{
+      font-size: 220px;
+      font-family: canopee;
+      text-align: center;
+      color: #C3BBB2;
+      border-bottom: 1px solid #C3BBB2;
+      line-height: 200px;
+      letter-spacing: 4px;
+      padding: 0px 8px;
+    }
+    #page2{
+      height: 120vh;
+      padding-left: 15px;
+    }
+    #page2-left{
+      padding-right: 30px;
+    }
+    #page2-left h2{
+      font-size: 110px;
+      margin-top: 5px;
+    }
+    #page2-left img{
+      display: none;
+    }
+    #page2-left p{
+      margin-top: 1px;
+      font-size: 25px;
+    }
+    #page2-right h2{
+      font-size: 70px;
+    }
+    #page3{
+      height: 95vh;
+      width: 100%;
+    }
+    #page3-left{
+      height: 100%;
+      width: 65%; /* Slightly increased width */
+    }
+    #page3 h2{
+      font-family: kochire;
+      font-size: 90px;
+      letter-spacing: 6px;
+      text-align: center;
+      width: 100%;
+      color: #C3BBB2;
+      margin-top: 15px;
+    }
+    #elem{
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 50px;
+      border-bottom: 1px solid #C3BBB2;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #C3BBB2;
+    }
+    #elem01{
+      height: 60%;
+      width: 40%;
+      border-right: 1px solid #C3BBB2;
+      text-align: center;
+      padding-right: 120px;
+    }
+    #elem01 p{
+      font-family: michroma;
+      font-size: 36px; /* Reduced font size */
+      text-align: center;
+    }
+    #elem02{
+      height: 100%;
+      width: 60%;
+      padding-left: 80px;
+      display: flex;
+      align-items: center;
+      font-size: 14px; /* Adjusted font size */
+      font-family: "Edu VIC WA NT Beginner", cursive;
+    }
+    #page4{
+      height: 130vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      padding-left: 8px;
+      padding-right: 8px;
+      /* padding-top: 0px; */
+      border-bottom: 1px solid #C3BBB2;
+    }
+    #page4-left{
+      display: none;
+    }
+    #page4-right{
+      height: 100%;
+      width: 100%;
+      padding: 0px 30px;
+      /* padding-top: 30px; */
+      border: none;
+    }
+    #page4-right p{
+      color: #C3BBB2;
+      font-size: 24px;
+      font-family: "Edu VIC WA NT Beginner", cursive;
+      margin-top: 480px;
+      line-height: 50px;
+    }
+    #page4-right #action{
+      height: 100px;
+      width: 55%;
+      background-color: #16110B;
+      border-radius: 50%;
+      margin: 60px 90px;
+      border: 1px solid #C3BBB2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: default;
+    }
+    #action h2{
+      font-family: canopee;
+      font-size: 65px;
+      color: #C3BBB2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-35%);
+      transition: all ease 0.6s;
+    }
+    #action img{
+      filter: invert();
+      height: 50px;
+      transform: translateX(-140%);
+      transition: all ease 0.6s;
+    }
+    #action:hover img{
+      transform: translateX(50%);
+    }
+    #action:hover h2{
+      transform: translateX(130%);
+    }
+    #page5{
+      height: 220vh;
+      width: 100%;
+      padding-left: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #C3BBB2;
+    }
+    .page5-content{
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 40px;
+    }
+    #page5 h2{
+      font-family: kochire;
+      font-size: 45px;
+      letter-spacing: 7px;
+      text-align: center;
+      width: 100%;
+      color: #C3BBB2;
+      margin-top: 15px;
+    }
+    #page5 .note{
+      color: #C3BBB2;
+      font-family: michroma;
+      font-size: 18px;
+      padding-right: 8px;
+      margin-top: 8px;
+    }
+    #page5 .note span{
+      color: #FFC107;
+    }
+    #elem001{
+      width: 100%;
+      height: 450px;
+      border: 3px solid #C3BBB2;
+      border-radius: 10%;
+      margin-bottom: 50px;
+    }
+    #elem001 h3{
+      font-family: michroma;
+      color: #C3BBB2;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 45px;
+    }
+    #elem001 h4{
+      font-family: michroma;
+      color: #C3BBB2;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 28px;
+    }
+    #elem001 h4 i{
+      color: #FFC107;
+    }
+    #elem001 h3{
+      color: #FFC107;
+      font-family: michroma;
+      font-size: 50px;
+      margin-top: 40px;
+    }
+    #page5 #membership{
+      height: 70px;
+      width: 38%;
+      background-color: #16110B;
+      border-radius: 20%;
+      margin: 60px 190px;
+      border: 1px solid #C3BBB2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: default;
+      text-align: center;
+    }
+    #membership h3{
+      font-family: canopee;
+      font-size: 36px;
+      color: #C3BBB2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      transform: translateX(-25%);
+      transition: all ease 0.6s;
+    }
+    #membership img{
+      filter: invert();
+      height: 28px;
+      transform: translateX(-180%);
+      transition: all ease 0.6s;
+    }
+    #membership:hover img{
+      transform: translateX(70%);
+    }
+    #membership:hover h3{
+      transform: translateX(180%);
+    }
+  }
+  
+
+  

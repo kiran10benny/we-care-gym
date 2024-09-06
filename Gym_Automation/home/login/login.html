@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign-up</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Michroma&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/3d354331c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="signinup">
+                <form action="login_signup.php" method="post" class="signin" onsubmit="return validatesin()">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input">
+                        <i class="fas fa-user"></i>
+                        <input type="text>" placeholder="Username" id="uname" name="uname">
+                    </div>
+                    <span id="error" class="error"></span>
+                    <div class="input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="pass" name="pass">
+                    </div>
+                    <span id="error1" class="error"></span>
+                    <input type="submit" value="Login" class="btn solid">
+                    <p class="socials">Or sign in with</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icons">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icons">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </form>
+
+                <form action="login_signin.php" method="post" class="sign-up" onsubmit="return validatesup()">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" id="unames" name="unames">
+                    </div>
+                    <span id="errors" class="error"></span>
+                    <div class="input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email" id="emails" name="emails">
+                    </div>
+                    <span id="errors1" class="error"></span>
+                    <div class="input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="passu" name="passu">
+                    </div>
+                    <span id="errors2" class="error"></span>
+                    <div class="input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" name="confirm" id="cpass">
+                    </div>
+                    <span id="errors3" class="error"></span>
+                    <div class="imagepicker">
+                        <input type="file" name="filename" id="file" accept="image" style="display: none;">
+                        <label for="file" style="color: #C3BBB2; font-size:20px; letter-spacing: 3px;">Upload
+                            Image</label>
+                    </div>
+
+                    <input type="submit" value="Sign Up" class="btn solid">
+                    <p class="socials">Or sign up with</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icons">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icons">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here ?</h3>
+                    <p>Join us to transform and be a new you</p>
+                    <button class="btn transparent" id="signup" style="color: #16110B; border:1px solid #16110B;">Sign
+                        Up</button>
+                </div>
+                <img src="login_img1.svg" alt="" class="image ">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us ?</h3>
+                    <p>Lets continue our journey</p>
+                    <button class="btn transparent" id="signin"
+                        style="color: #16110B; border:1px solid #16110B;">Login</button>
+                </div>
+                <img src="login_img2.svg" alt="" class="image ">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const sign_in = document.querySelector("#signup");
+        const sign_up = document.querySelector("#signin");
+        const container = document.querySelector(".container");
+
+        sign_in.addEventListener('click', () => {
+            container.classList.add("sign-up-mode");
+        });
+
+        sign_up.addEventListener('click', () => {
+            container.classList.remove("sign-up-mode");
+        });
+
+        function validatesin() {
+            var uname = document.getElementById('uname');
+            var pass = document.getElementById('pass');
+            if (uname.value === "") {
+                document.getElementById("error").innerHTML = '<i class="fa-solid fa-circle-info"></i> Username is required!';
+                uname.focus();
+                return false;
+            }
+            if (pass.value === "") {
+                document.getElementById("error1").innerHTML = '<i class="fa-solid fa-circle-info"></i> Please enter a Password!';
+                pass.focus();
+                return false;
+            }
+            return true;
+        }
+
+        document.getElementById("uname").addEventListener("input", function () {
+            document.getElementById("error").innerHTML = "";
+        });
+
+        document.getElementById("pass").addEventListener("input", function () {
+            document.getElementById("error1").innerHTML = "";
+        });
+
+        function validatesup() {
+            var unames = document.getElementById('unames');
+            var emails = document.getElementById('emails');
+            var passu = document.getElementById('passu');
+            var cpass = document.getElementById('cpass');
+            var epattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            var user = /^[a-zA-Z0-9 ]{3,20}$/;
+            var passt = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            if (unames.value === "") {
+                document.getElementById('errors').innerHTML = '<i class="fa-solid fa-circle-info"></i> Username is required!';
+                unames.focus();
+                return false;
+            }
+            if (!unames.value.match(user)) {
+                document.getElementById('errors').innerHTML = '<i class="fa-solid fa-circle-info"></i> Username should contain only Letters and Numbers!';
+                unames.focus();
+                return false;
+            }
+            if (emails.value === "") {
+                document.getElementById('errors1').innerHTML = '<i class="fa-solid fa-circle-info"></i> Please enter your Email-Id!';
+                emails.focus();
+                return false;
+            }
+            if (!emails.value.match(epattern)) {
+                document.getElementById('errors1').innerHTML = '<i class="fa-solid fa-circle-info"></i> Please enter a valid Email-Id!';
+                emails.focus();
+                return false;
+            }
+            if (passu.value === "") {
+                document.getElementById('errors2').innerHTML = '<i class="fa-solid fa-circle-info"></i> Please enter your Password!';
+                passu.focus();
+                return false;
+            }
+            if (!passu.value.match(passt)) {  // Changed from `pass.value.match(passt)` to `!pass.value.match(passt)`
+                document.getElementById('errors2').innerHTML = '<i class="fa-solid fa-circle-info"></i> Password must contain a letter, a digit, <br>and a special character!';
+                passu.focus();
+                return false;
+            }
+            if (cpass.value === "") {
+                document.getElementById('errors3').innerHTML = '<i class="fa-solid fa-circle-info"></i> Please confirm your Password!';
+                cpass.focus();
+                return false;
+            }
+            if (passu.value !== cpass.value) {
+                document.getElementById('errors3').innerHTML = '<i class="fa-solid fa-circle-info"></i> Passwords do not match!';
+                cpass.focus();
+                return false;
+
+
+            }
+            return true;
+        }
+
+        document.getElementById('unames').addEventListener("input", function () {
+            document.getElementById('errors').innerHTML = "";
+        });
+
+        document.getElementById('emails').addEventListener("input", function () {
+            document.getElementById('errors1').innerHTML = "";
+        });
+
+        document.getElementById('passu').addEventListener("input", function () {
+            document.getElementById('errors2').innerHTML = "";
+        });
+
+        document.getElementById('cpass').addEventListener("input", function () {
+            document.getElementById('errors3').innerHTML = "";
+        });
+
+    </script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
